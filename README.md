@@ -1,2 +1,3 @@
-# dotfiles
- :wrench: my dotfiles
+# Dotfiles
+
+:wrench: My .dotfiles
