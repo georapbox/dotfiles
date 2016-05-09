@@ -31,7 +31,9 @@
     "requireCommaBeforeLineBreak": true,
     "disallowTrailingComma": true,
     "requireSpaceAfterLineComment": true,
-    "disallowMultipleSpaces": true,
+    "disallowMultipleSpaces": {
+        "allowEOLComments": true
+    },
     "disallowSpaceAfterObjectKeys": true,
     "requireSpaceBeforeObjectValues": true,
     "requireTrailingComma": false,
