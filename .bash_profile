@@ -1,24 +1,16 @@
-# Load the shell dotfiles, and then some:
-for file in ~/.aliases; do
-	[ -r "$file" ] && [ -f "$file" ] && source "$file";
+### Load the shell dotfiles, and then some:
+for file in ~/.{bash_prompt,aliases}; do
+    [ -r "$file" ] && [ -f "$file" ] && source "$file";
 done;
 unset file;
+
+### Ensure user-installed binaries take precedence
+export PATH=/usr/local/bin:$PATH
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
 export PATH=$PATH:/Users/georapbox/Android_Development/sdks/adt-bundle-mac/sdk/tools
 export PATH=$PATH:/Users/georapbox/Android_Development/sdks/adt-bundle-mac/sdk/platform-tools
-
-### Adds colouring to bash
-export PS1="\[\033[36m\]\u\[\033[m\]@\[\033[32m\]\h:\[\033[33;1m\]\W\[\033[m\]👽 $ "
-export CLICOLOR=1
-export LSCOLORS=GxFxCxDxBxegedabagaced
-
-# Set architecture flags
-export ARCHFLAGS="-arch x86_64"
-
-### Ensure user-installed binaries take precedence
-export PATH=/usr/local/bin:$PATH
 
 ### Homebrew auto complete
 if [ -f $(brew --prefix)/etc/bash_completion ]; then
