@@ -21,13 +21,13 @@
     dltags = tag | xargs git tag -d
 
     # Find branches containing commit
-	fb = "!f() { git branch -a --contains $1; }; f"
+    fb = "!f() { git branch -a --contains $1; }; f"
 
-	# Find tags containing commit
+    # Find tags containing commit
     ft = "!f() { git describe --always --contains $1; }; f"
 
     # Remove branches that have already been merged with master
-	# a.k.a. ‘delete merged’
+    # a.k.a. ‘delete merged’
     dm = "!git branch --merged | grep -v '\\*' | xargs -n 1 git branch -d"
 
     # List contributors with number of commits
