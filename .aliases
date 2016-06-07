@@ -14,13 +14,6 @@ alias g="git"
 alias h="history"
 alias j="jobs"
 
-# Git aliases
-alias git_log_oneline="git log --pretty=oneline"
-alias git_log_pretty="git log --pretty=format:'%h - %an, %ar : %s'"
-alias git_log_pretty_graph="git log --pretty=format:'%h %s' --graph"
-alias git_del_remote_tags="git tag -l | xargs -n 1 git push --delete origin"
-alias git_del_local_tags="git tag | xargs git tag -d"
-
 # Detect which `ls` flavor is in use
 if ls --color > /dev/null 2>&1; then # GNU `ls`
 	colorflag="--color"
