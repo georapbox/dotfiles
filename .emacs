@@ -37,6 +37,9 @@
 ;; set cursor to bar
 (setq-default cursor-type 'bar)
 
+;; auto close bracket insertion.
+(electric-pair-mode 1)
+
 ;; whitespace-mode
 (setq whitespace-display-mappings
        ;; all numbers are Unicode codepoint in decimal. try (insert-char 182 ) to see it
