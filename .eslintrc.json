@@ -1,7 +1,8 @@
 {
   "env": {
     "browser": true,
-    "node": true
+    "node": true,
+    "es6": true
   },
   "globals": {},
   "rules": {
@@ -287,6 +288,77 @@
     "space-infix-ops": "warn",
 
     // enforce consistent spacing after the // or /* in a comment
-    "spaced-comment": ["warn", "always"]
+    "spaced-comment": ["warn", "always"],
+
+    /* ECMAScript 6 */
+
+    // require braces around arrow function bodies
+    "arrow-body-style": ["warn", "as-needed"],
+
+    // require parentheses around arrow function arguments
+    "arrow-parens": ["warn", "always"],
+
+    // enforce consistent spacing before and after the arrow in arrow functions
+    "arrow-spacing": ["warn", {"before": true, "after": true}],
+
+    // require super() calls in constructors
+    "constructor-super": "error",
+
+    // enforce consistent spacing around * operators in generator functions
+    "generator-star-spacing": ["warn", {"before": true, "after": false}],
+
+    // disallow reassigning class members
+    "no-class-assign": "error",
+
+    // disallow arrow functions where they could be confused with comparisons
+    "no-confusing-arrow": "off",
+
+    // disallow reassigning const variables
+    "no-const-assign": "error",
+
+    // disallow duplicate class members
+    "no-dupe-class-members": "warn",
+
+    // disallow duplicate module imports
+    "no-duplicate-imports": ["warn", {"includeExports": true}],
+
+    // disallow new operators with the Symbol object
+    "no-new-symbol": "error",
+
+    // disallow specified modules when loaded by import
+    "no-restricted-imports": ["error", "assert","buffer","child_process","cluster","crypto","dgram","dns","domain","events","freelist","fs","http","https","module","net","os","path","punycode","querystring","readline","repl","smalloc","stream","string_decoder","sys","timers","tls","tracing","tty","url","util","vm","zlib"],
+
+    // disallow this/super before calling super() in constructors
+    "no-this-before-super": "error",
+
+    // disallow unnecessary computed property keys in object literals
+    "no-useless-computed-key": "warn",
+
+    // disallow unnecessary constructors
+    "no-useless-constructor": "warn",
+
+    // disallow renaming import, export, and destructured assignments to the same name
+    "no-useless-rename": "warn",
+
+    // require let or const instead of var
+    "no-var": "warn",
+
+    // require rest parameters instead of arguments
+    "prefer-rest-params": "warn",
+
+    // require template literals instead of string concatenation
+    "prefer-template": "warn",
+
+    // require generator functions to contain yield
+    "require-yield": "error",
+
+    // enforce spacing between rest and spread operators and their expressions
+    "rest-spread-spacing": ["warn", "never"],
+
+    // require or disallow spacing around embedded expressions of template strings
+    "template-curly-spacing": ["warn", "never"],
+
+    // require or disallow spacing around the * in yield* expressions
+    "yield-star-spacing": ["warn", {"before": true, "after": false}]
   }
 }
