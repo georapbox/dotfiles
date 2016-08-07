@@ -1,6 +1,6 @@
 ### Load the shell dotfiles, and then some:
 for file in ~/.{bash_prompt,aliases}; do
-    [ -r "$file" ] && [ -f "$file" ] && source "$file";
+  [ -r "$file" ] && [ -f "$file" ] && source "$file";
 done;
 unset file;
 
@@ -14,7 +14,7 @@ export PATH=$PATH:/Users/georapbox/Android_Development/sdks/adt-bundle-mac/sdk/p
 
 ### Homebrew auto complete
 if [ -f $(brew --prefix)/etc/bash_completion ]; then
-    . $(brew --prefix)/etc/bash_completion
+  . $(brew --prefix)/etc/bash_completion
 fi
 
 # pip should only run if there is a virtualenv currently activated
@@ -22,7 +22,7 @@ export PIP_REQUIRE_VIRTUALENV=true
 
 # Temporarily turn off pip restrictions that require a virtualenv activated
 gpip(){
-   PIP_REQUIRE_VIRTUALENV="" pip "$@"
+  PIP_REQUIRE_VIRTUALENV="" pip "$@"
 }
 
 # Setting PATH for Python 3.4
