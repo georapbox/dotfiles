@@ -225,7 +225,7 @@
     "id-blacklist": ["warn"],
 
     // enforce consistent indentation
-    "indent": ["warn", 2],
+    "indent": ["warn", 2, {"SwitchCase": 1}],
 
     // enforce consistent spacing between keys and values in object literal properties
     "key-spacing": ["warn", {"afterColon": true, "align": "value"}],
