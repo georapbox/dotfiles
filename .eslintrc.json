@@ -234,7 +234,7 @@
     "keyword-spacing": "warn",
 
     // enforce a maximum line length
-    "max-len": ["warn", 100, 2, {"ignoreComments": true, "ignoreTrailingComments": true, "ignoreUrls": true}],
+    "max-len": ["warn", 100, 2, {"ignoreComments": true, "ignoreTrailingComments": true, "ignoreUrls": true, "ignoreStrings": true, "ignoreTemplateLiterals": true}],
 
     // enforce a maximum number of parameters in function definitions
     "max-params": ["warn", 3],
