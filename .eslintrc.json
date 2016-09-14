@@ -184,7 +184,7 @@
     "no-use-before-define": "error",
 
     // Disallow Use of undefined Variable
-    "no-undefined": "error",
+    "no-undef": "error",
 
     // disallow initializing variables to undefined
     "no-undef-init": "warn",
