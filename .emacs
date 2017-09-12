@@ -13,11 +13,11 @@
 ;; Truncate long lines
 (setq-default truncate-lines t)
 
-;; indentation to  4 spaces
+;; indentation to 2 spaces
 (setq-default indent-tabs-mode nil)
-(setq-default tab-width 4)
+(setq-default tab-width 2)
 (setq indent-line-function 'insert-tab)
-(setq sgml-basic-offset 4)
+(setq sgml-basic-offset 2)
 
 ;; stop creating ~ files
 (setq make-backup-files nil)
