@@ -21,6 +21,7 @@
 
 ;; stop creating ~ files
 (setq make-backup-files nil)
+(setq auto-save-default nil)
 
 ;; path for custom themes
 (add-to-list 'custom-theme-load-path "~/.emacs.d/themes/")
