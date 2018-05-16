@@ -50,7 +50,13 @@
     "no-extra-boolean-cast": 2,
 
     // disallow unnecessary parentheses
-    "no-extra-parens": 2,
+    "no-extra-parens": [
+      1,
+      "all",
+      {
+        "nestedBinaryExpressions": false
+      }
+    ],
 
     // disallow unnecessary semicolons
     "no-extra-semi": 2,
