@@ -65,7 +65,7 @@ if tput setaf 1 &> /dev/null; then
   bold=$(tput bold);
   reset=$(tput sgr0);
   # https://en.wikipedia.org/wiki/ANSI_escape_code#8-bit
-  # Solarized colors, taken from http://git.io/solarized-colors.
+  # https://unix.stackexchange.com/questions/124407/what-color-codes-can-i-use-in-my-ps1-prompt
   # black=$(tput setaf 0);
   blue=$(tput setaf 32);
   # cyan=$(tput setaf 37);
