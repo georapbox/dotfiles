@@ -35,6 +35,9 @@
   
   # Print current user
   user = !"git config user.name; git config user.email"
+  
+[pager]
+  branch = false
 
 [color]
   # Use colors in Git commands that are capable of colored output when
