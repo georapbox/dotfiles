@@ -36,6 +36,9 @@
   # Print current user
   user = !"git config user.name; git config user.email"
   
+  # Undo last commit
+  uncommit = reset --soft HEAD~1
+  
 [pager]
   branch = false
 
