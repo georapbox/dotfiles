@@ -88,3 +88,6 @@ alias afk="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resource
 
 # Reload the shell (i.e. invoke as a login shell)
 alias reload="exec $SHELL -l"
+
+# Kill all port forwarding
+alias kill-port="(ps aux | grep -i port-for | grep -v grep | awk {'print \$2'}| xargs kill)"
