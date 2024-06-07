@@ -62,3 +62,19 @@
   added = green
   changed = cyan
   untracked = red
+
+[core]
+	editor = nano
+  autocrlf = input
+
+[rerere]
+  enabled = true
+
+[includeIf "gitdir:~/Projects/personal/"]
+  path = ~/Projects/personal/.gitconfig
+
+[includeIf "gitdir:~/Projects/work/"]
+  path = ~/Projects/work/.gitconfig
+
+[maintenance]
+  # repo = /Users/<USERNAME>/Projects/personal/<PROJECT_NAME>
