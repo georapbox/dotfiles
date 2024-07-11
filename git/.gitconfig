@@ -33,11 +33,11 @@
   # List contributors with number of commits
   contributors = shortlog --summary --numbered
 
+  # Undo last commit
+  uncommit = reset --mixed HEAD~1
+
   # Print current user
   user = !"git config user.name; git config user.email"
-
-  # Undo last commit
-  uncommit = reset --soft HEAD~1
 
 [pager]
   branch = false
@@ -70,6 +70,11 @@
 [rerere]
   enabled = true
 
+# Include project specific .gitconfig
+# Inside each direcotry (personal and work) create a .gitconfig file with the following content:
+# [user]
+#  name = <USER_NAME>
+#  email = <USER_EMAIL>
 [includeIf "gitdir:~/Projects/personal/"]
   path = ~/Projects/personal/.gitconfig
 
