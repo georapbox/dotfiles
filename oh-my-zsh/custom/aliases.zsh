@@ -25,6 +25,9 @@ alias lsa="ls -laF"
 # List only directories
 alias lsd="ls -ld -- */"
 
+# Print working directory and copy to clipboard
+alias cpwd="pwd | tee >(tr -d '\n' | pbcopy)"
+
 # Get week number
 alias week='date +%V'
 
