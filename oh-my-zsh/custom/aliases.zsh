@@ -12,9 +12,11 @@ alias dt="cd ~/Desktop"
 alias @pj="cd ~/Projects"
 alias @p="cd ~/Projects/personal"
 alias @w="cd ~/Projects/work"
-alias g="git"
 alias h="history"
 alias j="jobs"
+
+# Refresh shell
+alias reload="source ~/.zshrc"
 
 # List all files in long format
 alias lsl="ls -lF"
@@ -44,3 +46,12 @@ alias cleanup="find . -type f -name '*.DS_Store' -ls -delete"
 
 # Kill all port forwarding
 alias kill-port="(ps aux | grep -i port-for | grep -v grep | awk {'print \$2'}| xargs kill)"
+
+# Git
+alias g="git"
+
+# Kubernetes
+alias k="kubectl"
+
+# pnpm
+alias pn="pnpm"
