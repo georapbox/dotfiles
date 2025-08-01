@@ -9,3 +9,7 @@ After installing `oh-my-zsh`, copy the files from `oh-my-zsh` directory to `~/.o
 ## [git](https://git-scm.com/)
 
 After installing `git`, copy the contents of `.gitconfig` to your global `.gitconfig` file. You can find the global `.gitconfig` file in your home directory. If it does not exist, you can create it by running `touch ~/.gitconfig`.
+
+## .ssh/config
+
+This configuration file is used to set up SSH connections for GitHub. It includes two hosts: `github.com` and `github-allwyn`. The `github.com` host uses the default identity file, while `github-allwyn` uses a specific identity file for a different account.
